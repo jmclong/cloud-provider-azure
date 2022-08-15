@@ -151,7 +151,7 @@ func (c *ManagedDiskController) CreateManagedDisk(ctx context.Context, options *
 		}
 	}
 
-	if diskSku == compute.DiskStorageAccountTypesUltraSSDLRS {
+	if diskSku == compute.DiskStorageAccountTypesUltraSSDLRS || diskSku == compute.DiskStorageAccountTypesPremiumV2LRS {
 		diskIOPSReadWrite := int64(consts.DefaultDiskIOPSReadWrite)
 		if options.DiskIOPSReadWrite != "" {
 			v, err := strconv.Atoi(options.DiskIOPSReadWrite)
