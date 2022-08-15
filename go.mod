@@ -35,6 +35,8 @@ require (
 	sigs.k8s.io/yaml v1.3.0
 )
 
+replace github.com/Azure/azure-sdk-for-go => github.com/jmclong/azure-sdk-for-go v0.0.0-20220815174815-7f0b93076856
+
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1 // indirect
 	github.com/Azure/go-autorest v14.2.0+incompatible // indirect
