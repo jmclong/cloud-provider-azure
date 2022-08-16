@@ -1,4 +1,4 @@
-module sigs.k8s.io/cloud-provider-azure
+module github.com/jmclong/cloud-provider-azure
 
 go 1.18
 
